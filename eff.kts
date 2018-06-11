@@ -17,7 +17,7 @@ Options:
   -h --help            Show this screen.
   -r <rt> --rate=<rt>  Framerate [default: 30].
   -e <ext> --extension=<ext>  Image file's extension [default: .png].
-  --crf=<crf>  Lower indicates better quality. 0-50?: Int. See ffmpeg for more details. [default: 12]
+  --crf=<crf>  Lower indicates better quality. 0-50?: Int. See ffmpeg for more details. (Setting this too high will prevent Telegram from interpreting it as a GIF.) [default: 12]
   -o <output> --out=<output>  Output file [default: happy.mp4].
   -p <p> --preset=<p>  Preset [default: veryslow]. 
   <images_dir> The directory where images are located.
