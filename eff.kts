@@ -16,12 +16,12 @@ Usage:
 Options:
   -h --help            Show this screen.
   -r <rt> --rate=<rt>  Framerate of resulting video [default: 30].
-  -f <fr> --framerate=<fr> Framerate of images (Image per second) [default: 30] . 
+  -f <fr> --framerate=<fr>  Framerate of images (Image per second). [default: 30] 
   -e <ext> --extension=<ext>  Image file's extension [default: .png].
   --crf=<crf>  Lower indicates better quality. 0-50?: Int. See ffmpeg for more details. (Setting this too high will prevent Telegram from interpreting it as a GIF.) [default: 12]
   -o <output> --out=<output>  Output file [default: happy.mp4].
   -p <p> --preset=<p>  Preset [default: veryslow]. 
-  <images_dir> The directory where images are located.
+  <images_dir>  The directory where images are located.
 
   Created by Fereidoon Mehri.
 """
