@@ -1,0 +1,12 @@
+ORIGINAL_FILE="$1"
+FILE_NAME=$(basename $ORIGINAL_FILE)
+EXPANDED_DIR=~/Downloads/expanded_app/"$FILE_NAME"
+APP_DIR="$EXPANDED_DIR/Payload/*.app"
+PLIST_FILE="$APP_DIR/Info.plist"
+mkdir -p "$EXPANDED_DIR"
+unzip -q "$ORIGINAL_FILE" -d "$EXPANDED_DIR"
+
+executable_file_name=$(PlistBuddy -c "Print CFBundleExecutable" $PLIST_FILE)
+EXECUTABLE_FILE="$APP_DIR/$executable_file_name"
+app_architecture_list=$(lipo -info $EXECUTABLE_FILE)
+echo $app_architecture_list
