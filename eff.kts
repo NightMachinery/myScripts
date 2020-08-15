@@ -8,6 +8,8 @@ import java.util.concurrent.TimeUnit
 
 val usage = """easy-ffmpeg: A wrapper around ffmpeg for converting image sequences to video files.
 
+Deprecated: Use imgseq2vid from night.sh instead. This one still works, of course.
+
 Usage:
   eff.kts [--rate=<rt> --framerate=<fr> -e <ext> --crf=<crf> -p <p> -- -o <output> <images_dir>] 
   eff.kts [-h]
